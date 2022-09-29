@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/02 Viggenere/css/style.css">
+    <title>Cifrado</title>
+</head>
+<body>
+
+    <div id="contenedor" >
+    
+        <header>
+            <h1>Cifrado</h1>
+            <br>
+            <p>Ingresa el tipo de cifrado que deseas realizar</p>
+
+        </header>
+
+        <div id="function">
+            <button id="bot-ces" class="btkp">Cesar</button>
+            <button id="bot-vig" class="btkp">Viggenere</button>
+        </div>
+
+
+        <div id="id-ces">
+
+            <div id="grupo">
+                <input type="text" id="cadena" class="input">
+                <label for="cadena">Mensaje</label>
+            </div>
+
+            <div id="grupo">
+                <input type="number"  id="pos" class="input" > 
+                <label for="pos">Posicion</label>
+            </div>
+
+            <p><input type="button" value="Cifrar" onclick="cifrar()" class="btk">
+            <input type="button" value="Descifrar" onclick="descifrar()"  class="btk"></p>
+
+            <div id="resultado"></div>
+
+        </div>
+
+        
+
+        <div id="id-vig" >
+            <div id="grupo">
+                <input type="text" id="llave" class="input"> 
+                <label for="llave">Clave</label>
+            </div>
+
+            <div id="grupo">
+
+                <input type="text" id="mess" class="input">
+                <label for="mess">Mensaje</label>
+
+            </div>
+            
+            <p><input type="button" id="ci" value="Cifrar" class="btk">
+            <input type="button" id="de" value="Descifrar" class="btk"></p>
+
+            <div id="rs"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/02 Viggenere/js/viggenere.js"></script>
+    <script src="/02 Viggenere/js/app.js"></script>
+
+    <script src="/02 Viggenere/js/Cesar.js"></script>
+
+</body>
+</html>
