@@ -134,7 +134,16 @@ $(document).ready(function(){
 
                 //tenemos que ejecutar el cifrado
 
-                let newValores = descifrar(posm,posk);
+                let newValores = 0
+
+                if((posm-posk)>=0){
+
+                    newValores = (posm-posk)%27;
+            
+                }else{
+            
+                    newValores =(posm-posk+27)%27;
+                }
 
                 newMess += abc[newValores];
 
