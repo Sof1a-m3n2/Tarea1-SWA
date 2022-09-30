@@ -104,6 +104,8 @@ $(document).ready(function(){
 
         //para aplicar el algoritmo debemos crear una funcion que se encargue de revisar las condiciones del mismo
 
+        console.log("si entro")
+
         if(revision(mess,key)){
 
             /* vamos primero por aplicar y obtener la posicion de la longitud del mensaje 
