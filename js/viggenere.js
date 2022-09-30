@@ -138,11 +138,11 @@ $(document).ready(function(){
 
                 if((posm-posk)>=0){
 
-                    newValores = (posm-posk)%27;
+                    newValores = (posm-posk)%abc.length;
             
                 }else{
             
-                    newValores =(posm-posk+27)%27;
+                    newValores =(posm-posk+abc.length)%abc.length;
                 }
 
                 newMess += abc[newValores];
